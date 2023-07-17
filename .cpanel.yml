@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/creatlearning/public_html/beta
+    - export DEPLOYPATH=/home/creatlearning/public_html/portfolio
     - /bin/cp * $DEPLOYPATH
