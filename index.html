@@ -103,12 +103,12 @@
 	<script type="text/javascript">
 
 		$(".category-wrapper").on("mouseenter", "img", function (event) {
-			$(this).prev(".cat-title").show();
+			$(this).prev(".cat-title").toggle();
 		});
 
-		$(".category-wrapper").on("mouseleave", "img", function (event) {
-			$(this).prev(".cat-title").hide();
-		});
+		// $(".category-wrapper").on("mouseleave", "img", function (event) {
+		// 	$(this).prev(".cat-title").hide();
+		// });
 		// const array = [1, 2, 2, 3, 4, 3, 4, 5, 5, 1];
 		// //const newArr = [... new Set(array)];
 
