@@ -17,23 +17,101 @@
 			</ul>
 		</nav>
 	</header>
-	<div class="wrapper">
-		<div class="column">Grid 1</div>
-		<div class="column">Grid 2</div>
-		<div class="column">Grid 3</div>
-		<div class="column">Grid 4</div>
-		<div class="column">Grid 5</div>
-		<div class="column">Grid 6</div>
-		<div class="column">Grid 7</div>
-		<div class="column">Grid 8</div>
-		<div class="column">Grid 9</div>
-		<div class="column">Grid 10</div>
+	<div class="container">
+		<h2 class="main-heading">Top Categories</h2>
+		<div class="category-wrapper">
+			<div class="column">
+				<h3 class="cat-title">Shirts</h3>
+				<img src="assets/img/cat-1.webp">
+			</div>
+			<div class="column">
+				<h3 class="cat-title">Shoes</h3>
+				<img src="assets/img/cat-2.webp">
+			</div>
+			<div class="column">
+				<h3 class="cat-title">Beauty</h3>
+				<img src="assets/img/cat-3.jpg">
+			</div>
+			<div class="column">
+				<h3 class="cat-title">Accessories</h3>
+				<img src="assets/img/cat-4.jpg">
+			</div>
+			<div class="column">
+				<h3 class="cat-title">Shirts</h3>
+				<img src="assets/img/cat-1.webp">
+			</div>
+			<div class="column">
+				<h3 class="cat-title">Shoes</h3>
+				<img src="assets/img/cat-2.webp">
+			</div>
+			<div class="column">
+				<h3 class="cat-title">Beauty</h3>
+				<img src="assets/img/cat-3.jpg">
+			</div>
+			<div class="column">
+				<h3 class="cat-title">Accessories</h3>
+				<img src="assets/img/cat-4.jpg">
+			</div>
+		</div>
 	</div>
+	<div class="container">
+		<h2 class="main-heading">Hottest Products</h2>
+		<div class="product-wrapper">
+			<div class="column">
+				<h3>Product 1</h3>
+				<img src="assets/img/product.jpg">
+			</div>
+			<div class="column">
+				<h3>Product 2</h3>
+				<img src="assets/img/product2.jpg">
+			</div>
+			<div class="column">
+				<h3>Product 3</h3>
+				<img src="assets/img/product3.jpg">
+			</div>
+			<div class="column">
+				<h3>Product 4</h3>
+				<img src="assets/img/product4.jpg">
+			</div>
+			<div class="column">
+				<h3>Product 5</h3>
+				<img src="assets/img/product5.jpg">
+			</div>
+			<div class="column">
+				<h3>Product 6</h3>
+				<img src="assets/img/product6.jpg">
+			</div>
+			<div class="column">
+				<h3>Product 7</h3>
+				<img src="assets/img/product7.jpg">
+			</div>
+			<div class="column">
+				<h3>Product 8</h3>
+				<img src="assets/img/product8.jpg">
+			</div>
+			<div class="column">
+				<h3>Product 9</h3>
+				<img src="assets/img/product9.jpg">
+			</div>
+			<div class="column">
+				<h3>Product 10</h3>
+				<img src="assets/img/product10.jpg">
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 	<script type="text/javascript">
-		// const array = [1, 2, 2, 3, 4, 3, 4, 5, 5, 1];
-		// const newArr = [... new Set(array)];
 
-		// console.log(array.pop(3));
+		$(".category-wrapper").on("mouseenter", "img", function (event) {
+			//console.log($(this).closest(".cat-title"));
+			//$('.cat-title').toggle();
+			$(this).prev(".cat-title").toggle();
+		});
+		// const array = [1, 2, 2, 3, 4, 3, 4, 5, 5, 1];
+		// //const newArr = [... new Set(array)];
+
+		// array.splice(3, 1);
+		// console.log(array);
 	</script>
 </body>
 </html>
