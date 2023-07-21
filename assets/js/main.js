@@ -1,20 +1,36 @@
-$('.add-to-cart').hide();
-$(".category-wrapper").on("mouseenter", "img", function (event) {
-    $(this).prev(".cat-title").toggle();
+$(".add-to-cart").hide();
+$('.cat-image').hover(function(){ 
+    $(this).prev(".cat-title").show();
+}, function(){
+    $(this).prev(".cat-title").hide();
 });
 
-$(".product-wrapper").on("mouseenter", "img", function (event) {
+$('.product-image').hover(function(){ 
     $(this).next(".add-to-cart").show();
-});
-
-$(".product-wrapper").on("mouseleave", "img", function (event) {
+}, function(){
     $(this).next(".add-to-cart").hide();
 });
 
-$(document).on("mouseenter", ".add-to-cart", function (event) {
+$('.add-to-cart').hover(function(){ 
     $(this).show();
+}, function(){
+    $(this).hide();
 });
 
-$(document).on("mouseleave", ".add-to-cart", function (event) {
-    $(this).show();
-});
+
+
+// $(".product-wrapper").on("mouseenter", "img", function (event) {
+//     $(this).next(".add-to-cart").show();
+// });
+
+// $(".product-wrapper").on("mouseleave", "img", function (event) {
+//     $(this).next(".add-to-cart").hide();
+// });
+
+// $(document).on("mouseenter", ".add-to-cart", function (event) {
+//     $(this).show();
+// });
+
+// $(document).on("mouseleave", ".add-to-cart", function (event) {
+//     $(this).show();
+// });

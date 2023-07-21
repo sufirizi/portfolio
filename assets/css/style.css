@@ -169,8 +169,17 @@ h1, h2, h3{
 	color: #fff;
     position: absolute;
     top: 5%;
-    left: 85%;
-    font-size: 4rem;
+    left: 90%;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.view-eye{
+	color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    font-size: 3rem;
     cursor: pointer;
 }
 
@@ -220,4 +229,18 @@ h1, h2, h3{
 	background: #fff;
     color: #5f9eaf;
     border: 1px solid #5f9eaf;
+}
+
+.add-to-cart {
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.product-image:hover .add-to-cart {
+    opacity: 0;
+}
+
+.product-image .add-to-cart:hover {
+    opacity: 1;
 }
