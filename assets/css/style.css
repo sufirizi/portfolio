@@ -186,12 +186,6 @@ h1, h2, h3{
     cursor: pointer;
 }
 
-.read-more-button:hover{
-	background: #fff;
-    color: #5f9eaf;
-    border: 1px solid #5f9eaf;
-}
-
 .add-to-cart{
 	display: none;
     position: absolute;
@@ -220,4 +214,10 @@ h1, h2, h3{
     margin-left: 10px;
 	cursor: pointer;
 	background-color: #5f9eaf;
+}
+
+.button-hover:hover{
+	background: #fff;
+    color: #5f9eaf;
+    border: 1px solid #5f9eaf;
 }
