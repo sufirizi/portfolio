@@ -71,6 +71,7 @@ h1, h2, h3{
 }
 
 
+
 .navbar::after{
 	content: '';
 	display: block;
@@ -83,6 +84,11 @@ h1, h2, h3{
 }
 
 /* Practice  */
+
+.wrapper{
+	margin-top: 30px;
+}
+
 .container{
 	margin: 50px 10px;
 	text-align: center;
@@ -91,13 +97,11 @@ h1, h2, h3{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	grid-gap: 1rem;
-	margin: 5px;
 }
 
 .product-wrapper .column{
 	text-align: center;
     background: yellow;
-    height: 20rem;
     font-size: 2rem;
     position: relative;
 }
@@ -129,7 +133,6 @@ h1, h2, h3{
     justify-content: center;
     /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
     /* grid-gap: 1rem; */
-    margin: 10px;
 }
 
 .category-wrapper .column{
@@ -162,50 +165,59 @@ h1, h2, h3{
 	display: none;
 }
 
-
-@media only screen and (max-width:644px){
-	.category-wrapper .column{
-		/*background: yellow;*/
-		position: relative;
-		width: 50%;
-	}
-
-	.category-wrapper .column img{
-		width: 150px;
-    	height: 150px;
-		object-fit: cover;
-		border-radius: 50%;
-	}
+.wish-heart{
+	color: #fff;
+    position: absolute;
+    top: 5%;
+    left: 85%;
+    font-size: 4rem;
+    cursor: pointer;
 }
 
-@media (min-width: 645px) and (max-width: 768px){
-	.category-wrapper .column{
-		/*background: yellow;*/
-		position: relative;
-		width: 33%;
-	}
-
-	.category-wrapper .column img{
-		width: 200px;
-    	height: 200px;
-		object-fit: cover;
-		border-radius: 50%;
-	}
-
+.read-more-button{
+	padding: 10px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    background: #5f9eaf;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
 }
 
-@media (min-width: 769px) and (max-width: 1279px){
-	.category-wrapper .column{
-		/*background: yellow;*/
-		position: relative;
-		width: 25%;
-	}
+.read-more-button:hover{
+	background: #fff;
+    color: #5f9eaf;
+    border: 1px solid #5f9eaf;
+}
 
-	.category-wrapper .column img{
-		width: 150px;
-    	height: 150px;
-		object-fit: cover;
-		border-radius: 50%;
-	}
+.add-to-cart{
+	display: none;
+    position: absolute;
+    display: inline;
+    bottom: 15%;
+    right: 0%;
+    width: 100%;
+    padding: 10px 0px;
+}
 
+.buy-now{
+	border: none;
+    padding: 10px 30px;
+	color: #fff;
+    border-radius: 2px;
+    margin-right: 10px;
+	cursor: pointer;
+	background-color: #5f9eaf;
+}
+
+.add-cart{
+	border: none;
+    padding: 10px 30px;
+	color: #fff;
+    border-radius: 2px;
+    margin-left: 10px;
+	cursor: pointer;
+	background-color: #5f9eaf;
 }
