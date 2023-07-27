@@ -46,11 +46,18 @@ h1, h2, h3{
 	background-size: cover;
 }
 
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .header .navbar .logo{
 	color:white;
 	float: left;
 	font-size: 3.5rem;
 	margin-left: 5rem;
+    width: 100%;
 }
 
 .header .navbar .nav-items a{
@@ -65,9 +72,10 @@ h1, h2, h3{
 }
 
 .header .navbar .nav-items{
-	float: right;
+	text-align: center;
     margin-right: 10rem;
-    margin-top: 1rem;
+    padding-top: 1rem;
+    width: 100%;
 }
 
 
@@ -172,6 +180,39 @@ h1, h2, h3{
     left: 90%;
     font-size: 3rem;
     cursor: pointer;
+}
+
+.font-icon{
+    padding: 0rem 2rem;
+    cursor: pointer;
+}
+
+.user-section{
+    float: right;
+    /* position: absolute; */
+    color: white;
+    font-size: 2rem;
+    margin-right: 5rem;
+    padding: 1rem 0;
+    /* margin-top: -15px; */
+    width: 100%;
+    text-align: right;
+
+}
+
+.user-section a span{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 20px;
+    background: white;
+    font-weight: 700;
+    color: black;
+    position: absolute;
+    right: 5rem;
+    text-align: center;
+    font-size: 1rem;
 }
 
 .view-eye{
