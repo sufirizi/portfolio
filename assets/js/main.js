@@ -17,7 +17,7 @@ $('.add-to-cart').hover(function(){
     $(this).hide();
 });
 
-
+console.log('Automatic git push addedd');
 
 // $(".product-wrapper").on("mouseenter", "img", function (event) {
 //     $(this).next(".add-to-cart").show();
