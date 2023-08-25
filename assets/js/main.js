@@ -19,6 +19,17 @@ $('.add-to-cart').hover(function(){
 
 console.log('Automatic git push addedd again!!!!');
 
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+    }
+})
+
 // $(".product-wrapper").on("mouseenter", "img", function (event) {
 //     $(this).next(".add-to-cart").show();
 // });
