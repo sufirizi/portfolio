@@ -352,6 +352,8 @@ h1, h2, h3{
   }
   
   .roller #rolltext {
+    font-size: 5rem;
+    color: #ffd243;
     position: absolute;
     top: 0;
     animation: slide 5s infinite;  
