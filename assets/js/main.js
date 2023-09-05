@@ -22,6 +22,7 @@ console.log('Automatic git push addedd again!!!!');
 $('.owl-carousel').owlCarousel({
     loop:true,
     autoplay: true,
+    slideSpeed: 3000,
     margin:10,
     dots: true,
     nav:true,
