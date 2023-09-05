@@ -112,6 +112,9 @@ h1, h2, h3{
 	text-align: center;
 }
 
+.text-red{
+    color: red;
+}
 .product-wrapper{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -454,7 +457,7 @@ h1, h2, h3{
 .footer{
     background-color: #1f4d5a;
     height: auto;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -490,9 +493,10 @@ h1, h2, h3{
     padding: 1rem 4rem;
     border-radius: 5px;
     margin-bottom: 2rem;
+    border: 1px solid white;
 }
 
-.news-letter-form input[type="button"] {
+.subscribe {
     padding: 1rem 4rem;
     border-radius: 2px;
     margin-bottom: 2rem;
@@ -501,6 +505,7 @@ h1, h2, h3{
     text-transform: uppercase;
     border-radius: 5px;
     cursor: pointer;
+    border: 1px solid #5f9eaf;
 }
 
 .copyright{
@@ -513,4 +518,14 @@ h1, h2, h3{
 .copyright p{
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+.social-icons{
+    padding-top: 2rem;
+}
+
+.social-icons a{
+    color: white;
+    font-size: 3rem;
+    margin: 0 2rem;
 }
