@@ -64,6 +64,11 @@ h1, h2, h3{
     width: 100%;
 }
 
+.header-logo{
+    height: 5rem;
+    margin: 0.5rem 0.5rem 0.5rem 6rem
+}
+
 .header .navbar .nav-items a{
 	color: white;
 	text-decoration: none;
@@ -216,7 +221,7 @@ h1, h2, h3{
     margin-right: 5rem;
     padding: 1rem 0;
     /* margin-top: -15px; */
-    width: 100%;
+    width: 50%;
     text-align: right;
 
 }
@@ -235,6 +240,49 @@ h1, h2, h3{
     text-align: center;
     font-size: 1rem;
 }
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #5f9eaf;
+    color: white;
+  }
+  
 
 .view-eye{
 	color: #fff;
@@ -329,6 +377,28 @@ h1, h2, h3{
     object-position: 0%;
 }
 
+.banner .item{
+    position: relative;
+}
+
+.banner .banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    color: white;
+    text-shadow: 0px 0px 8px #000;
+}
+
+.banner-text h1{
+    font-size: 4rem;
+}
+
+.banner-text p{
+    font-size: 3rem;
+}
+
 button.owl-prev {
     position: absolute;
     top: 50%;
@@ -397,6 +467,9 @@ button.owl-next {
     }
     72.5%{
       top: -12.25rem;
+    }
+    98.5%{
+        top: -16.25rem;
     }
   }
   
@@ -500,6 +573,10 @@ button.owl-next {
     color: #5f9eaf;
 }
 
+.news-letter{
+    position: relative;
+}
+
 .news-letter h3{
     font-size: 2rem;
     color: #5f9eaf;
@@ -517,16 +594,18 @@ button.owl-next {
     border-radius: 5px;
     margin-bottom: 2rem;
     border: 1px solid white;
+    outline: none;
 }
 
 .subscribe {
-    padding: 1rem 4rem;
-    border-radius: 2px;
+    position: absolute;
+    transform: translate(-39px);
+    padding: 1rem 1rem;
+    border-radius: 0px 5px 5px 0px;
     margin-bottom: 2rem;
     background-color: #5f9eaf;
     color: white;
     text-transform: uppercase;
-    border-radius: 5px;
     cursor: pointer;
     border: 1px solid #5f9eaf;
 }
@@ -543,12 +622,9 @@ button.owl-next {
     font-weight: 500;
 }
 
-.social-icons{
-    padding-top: 2rem;
-}
-
 .social-icons a{
     color: white;
     font-size: 3rem;
     margin: 0 2rem;
 }
+

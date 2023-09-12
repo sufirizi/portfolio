@@ -21,7 +21,7 @@ console.log('Automatic git push addedd again!!!!');
 
 $('.owl-carousel').owlCarousel({
     loop:true,
-    autoplay: true,
+    autoplay: false,
     slideSpeed: 3000,
     margin:10,
     dots: true,
@@ -33,6 +33,15 @@ $('.owl-carousel').owlCarousel({
         },
     }
 })
+
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
 
 // $(".product-wrapper").on("mouseenter", "img", function (event) {
 //     $(this).next(".add-to-cart").show();

@@ -50,3 +50,22 @@
 	  flex-direction: column;
 	}
   }
+
+@media screen and (max-width: 990px) {
+
+	.navbar{
+		display: none;
+	}
+
+	.header-logo{
+		margin: 0;
+	}
+	
+}
+
+@media screen and (min-width: 991px){
+	
+	.topnav{
+		display: none;
+	}
+}
