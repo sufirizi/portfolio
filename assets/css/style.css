@@ -39,6 +39,10 @@ h1, h2, h3{
 	font-weight: 500;
 }
 
+.clearfix{
+    clear: both;
+}
+
 /* .header{
 	height: 80vh;
 	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0, 0.5)) , url('../img/header-image.jpg');
@@ -83,7 +87,7 @@ h1, h2, h3{
 .header .navbar .nav-items{
 	text-align: center;
     margin-right: 10rem;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     width: 100%;
 }
 
@@ -151,7 +155,7 @@ h1, h2, h3{
 .container h2{
 	font-size: 3rem;
     font-weight: 600;
-    display: inline;
+    /*display: inline;*/
 }
 
 .container-offer h2{
@@ -305,6 +309,18 @@ h1, h2, h3{
     cursor: pointer;
 }
 
+.full-width-botton{
+    width: 100%;
+    padding: 10px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    background: #5f9eaf;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
 .add-to-cart{
 	display: none;
     position: absolute;
@@ -628,3 +644,222 @@ button.owl-next {
     margin: 0 2rem;
 }
 
+.inner-banner{
+    position: relative;
+}
+
+.inner-banner .banner-text{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inner-banner img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-filter{
+    width: 20%;
+    float: left;
+    margin-top: 16px;
+    text-align: initial;
+    border: 1px darkgray;
+    margin-right: 1rem;
+}
+
+.filter-heading{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 500;
+    background: #5f9eaf;
+    padding: 5px 10px;
+    width: 100%;
+    color: white;
+}
+
+.filter-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .filter-table td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 1rem;
+  }
+  
+  /* .filter-table tr{
+    font-size: 1.5rem;
+  } */
+
+  /* .filter-table tr label{
+    cursor: pointer;
+    font-size: 1.7rem;
+  } */
+
+  .font-plus{
+    position: relative;
+    bottom: 20px;
+    float: right;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .sub-cat-table{
+    font-family: arial, sans-serif;
+    width: 100%;
+  }
+
+  /* .checkmark{
+    position: absolute;
+    background: #eee;
+    width: 20px;
+    height: 20px;
+    left: 15px;
+  } */
+
+  /* The container */
+.mycontainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    font-size: 17px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .mycontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #b2d9e3;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .mycontainer:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .mycontainer input:checked ~ .checkmark {
+    background-color: #5f9eaf;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .mycontainer input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .mycontainer .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .cart-table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .cart-table th{
+    background: #5f9eaf;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .cart-table tr{
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid lightgray;
+  }
+
+  .cart-img{
+    width: 80px;
+    height: 80px;
+    margin: 10px 0px;
+    object-fit: cover;
+  }
+
+  .cart-summary{
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .cart-summary td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .cart-summary-box{
+    margin-top: 2rem;
+    float: right;
+    width: 25%;
+  }
+
+ .cart-summary-box p{
+    font-size: 20px;
+    font-weight: 500;
+ }
+
+ .coupon-box{
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+ }
+
+ .coupon-box input{
+    padding: 6px 20px;
+    border-radius: 2px;
+    border: 1px solid gray;
+ }
+
+ .coupon-button{
+    padding: 6px 25px;
+    cursor: pointer;
+    background: #5f9eaf;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 2px;
+ }
+
+.coupon-box p{
+    display: flex;
+    margin: 0;
+    font-size: 12px;
+}

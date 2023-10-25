@@ -32,7 +32,16 @@ $('.owl-carousel').owlCarousel({
             items:1
         },
     }
-})
+});
+
+/* category show hide */
+$(document).on("click", ".show-more", function(){
+    let id = $(this).data('parent-id');
+
+    $('.sub-cat-table-'+id).toggle();
+
+});
+/* category show hide */
 
 function myFunction() {
     var x = document.getElementById("myLinks");
