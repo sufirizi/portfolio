@@ -4,15 +4,23 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My Shop</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/assets/owl.carousel.css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome-free-6.4.2-web/css/all.css">
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome-free-6.4.2-web/css/fontawesome.css">
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome-free-6.4.2-web/css/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome-free-6.4.2-web/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome-free-6.4.2-web/css/regular.css">
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome-free-6.4.2-web/css/regular.min.css">
 </head>
 <body>
 	<header class="header">
 		<div class="topnav">
-			<a href="#home" class="active"><img src="assets/img/footer-logo.png" class="header-logo"></a>
+			<a href="index.html" class="active"><img src="assets/img/footer-logo.png" class="header-logo"></a>
 			<!-- Navigation links (hidden by default) -->
 			<div id="myLinks">
 			  <a href="#news">News</a>
@@ -25,21 +33,21 @@
 			</a>
 		  </div>
 		<nav class="navbar">
-			<img src="assets/img/footer-logo.png" class="header-logo">
+			<a href="index.html" class="active"><img src="assets/img/footer-logo.png" class="header-logo"></a>
 			<ul class="nav-items">
 				<li class="nav-item"><a href="index.html">Home</a></li>
 				<li class="nav-item"><a href="about.html">About</a></li>
 				<li class="nav-item"><a href="contact.html">Contact</a></li>
 			</ul>
 			<div class="user-section">
-				<a href="#">
-					<i class="font-icon fa fa-sharp fa fa-regular fa fa-user fa-fade fa fa-lg"></i>
+				<a href="dashboard.html">
+					<i class="font-icon fa fa-sharp fa fa-regular fa fa-user"></i>
 				</a>
-				<a href="#">
-					<i class="font-icon fa fa-sharp fa fa-light fa fa-heart fa fa-fade fa fa-lg"></i>
+				<a href="wishlist.html">
+					<i class="font-icon fa fa-sharp fa fa-light fa fa-heart"></i>
 				</a>
-				<a href="#">
-					<i class="font-icon fa fa-sharp fa fa-solid fa fa-cart-plus fa fa-lg"></i><span>2</span>
+				<a href="cart.html">
+					<i class="font-icon fa fa-sharp fa fa-solid fa fa-cart-plus"></i><span>2</span>
 				</a>
 			</div>
 		</nav>
@@ -62,36 +70,40 @@
                 <th>Price</th>
                 <th>Quantity</th>
                 <th>Total</th>
+				<th></th>
             </tr>
             <tr>
                 <td>1</td>
-                <td><img src="assets/img/cart-1.webp" class="cart-img"></td>
+                <td><a href="javascript:void(0)"><img src="assets/img/cart-1.webp" class="cart-img"></a></td>
                 <td>Lakme Lipstick</td>
                 <td>&#8377;150</td>
-                <td>5</td>
+                <td class="cart-quantity"><span class="decrement"><i class="fa-solid fa-minus" style="color: #ffffff;"></i></span><span class="item-quantity">5</span><span class="increment"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></span></td>
                 <td>&#8377;750</td>
+				<td><span class="cart-delete"><i class="fa-solid fa-trash" style="color: #e40707;"></i></span></td>
             </tr>
             <tr>
                 <td>2</td>
-                <td><img src="assets/img/cart-2.jpg" class="cart-img"></td>
+                <td><a href="javascript:void(0)"><img src="assets/img/cart-2.jpg" class="cart-img"></a></td>
                 <td>Nivea Face Wash</td>
                 <td>&#8377;180</td>
-                <td>3</td>
+                <td class="cart-quantity"><span class="decrement"><i class="fa-solid fa-minus" style="color: #ffffff;"></i></span><span class="item-quantity">3</span><span class="increment"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></span></td>
                 <td>&#8377;540</td>
+				<td><span class="cart-delete"><i class="fa-solid fa-trash" style="color: #e40707;"></i></span></td>
             </tr>
             <tr>
                 <td>3</td>
-                <td><img src="assets/img/cart-3.webp" class="cart-img"></td>
+                <td><a href="javascript:void(0)"><img src="assets/img/cart-3.webp" class="cart-img"></a></td>
                 <td>Eyeconic Kajal</td>
                 <td>&#8377;120</td>
-                <td>4</td>
+                <td class="cart-quantity"><span class="decrement"><i class="fa-solid fa-minus" style="color: #ffffff;"></i></span><span class="item-quantity">4</span><span class="increment"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></span></td>
                 <td>&#8377;480</td>
+				<td><span class="cart-delete"><i class="fa-solid fa-trash" style="color: #e40707;"></i></span></td>
             </tr>
         </table>
         <div class="coupon-box">
             <p>Have a coupon code?</p>
             <input type="text" name="coupon-code" placeholder="Enter coupon code">
-            <button class="coupon-button button-hover">Submit</button>
+            <button class="coupon-button button-hover">Apply</button>
         </div>
         <div class="cart-summary-box">
             <p>Cart Summary</p>
@@ -142,9 +154,9 @@
 				<button class="subscribe button-hover"><i class="fa fa-solid fa fa-paper-plane fa fa-lg"></i></button>
 			</div>
 			<div class="social-icons">
-				<a href="#"><i class="fa fa-brands fa fa-facebook fa fa-beat fa fa-2xl"></i></a>
-				<a href="#"><i class="fa fa-brands fa fa-instagram fa fa-beat-fade fa fa-2xl"></i></a>
-				<a href="#"><i class="fa fa-brands fa fa-youtube fa fa-beat-fade fa fa-2xl"></i></a>
+				<a href="#"><i class="fa fa-brands fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-brands fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-brands fa fa-youtube"></i></a>
 			</div>
 		</div>
 	</div>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Shop</title>
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/assets/owl.carousel.css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome-free-6.4.2-web/css/all.css">
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome-free-6.4.2-web/css/fontawesome.css">
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome-free-6.4.2-web/css/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome-free-6.4.2-web/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome-free-6.4.2-web/css/regular.css">
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome-free-6.4.2-web/css/regular.min.css">
+</head>
+<body>
+	<header class="header">
+		<div class="topnav">
+			<a href="index.html" class="active"><img src="assets/img/footer-logo.png" class="header-logo"></a>
+			<!-- Navigation links (hidden by default) -->
+			<div id="myLinks">
+			  <a href="#news">News</a>
+			  <a href="#contact">Contact</a>
+			  <a href="#about">About</a>
+			</div>
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			  <i class="fa fa-bars"></i>
+			</a>
+		  </div>
+		<nav class="navbar">
+			<a href="index.html" class="active"><img src="assets/img/footer-logo.png" class="header-logo"></a>
+			<ul class="nav-items">
+				<li class="nav-item"><a href="index.html">Home</a></li>
+				<li class="nav-item"><a href="about.html">About</a></li>
+				<li class="nav-item"><a href="contact.html">Contact</a></li>
+			</ul>
+			<div class="user-section">
+				<a href="dashboard.html">
+					<i class="font-icon fa fa-sharp fa fa-regular fa fa-user fa fa-lg"></i>
+				</a>
+				<a href="wishlist.html">
+					<i class="font-icon fa fa-sharp fa fa-light fa fa-heart fa fa-lg"></i>
+				</a>
+				<a href="cart.html">
+					<i class="font-icon fa fa-sharp fa fa-solid fa fa-cart-plus fa fa-lg"></i><span>2</span>
+				</a>
+			</div>
+		</nav>
+		<!-- <div class="inner-banner">
+            <img src="assets/img/shop-banner.jpg" alt="banner1">
+            <div class="banner-text">
+                <h1>50% off for all brands</h1>
+                <p>Limited offer</p>
+            </div>
+		</div> -->
+	</header>
+
+	<div class="other-container">
+		<!-- <h2 class="main-heading">Cart</h2> -->
+		<div class="product-details-image">
+            <div class="product-details-main-image">
+                <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/15475718/2023/6/23/335ef3be-2d8c-43d1-9972-12f20fbbb6c91687501313776TommyHilfigerMenGunmetal-TonedDialBrownLeatherStrapsChronogr1.jpg">
+                <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/15475718/2023/6/23/5422634f-5323-43e5-9de7-e64cda56d4981687501313791TommyHilfigerMenGunmetal-TonedDialBrownLeatherStrapsChronogr2.jpg">
+                <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/15475718/2023/6/23/5422634f-5323-43e5-9de7-e64cda56d4981687501313791TommyHilfigerMenGunmetal-TonedDialBrownLeatherStrapsChronogr2.jpg">
+				<img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/15475718/2023/6/23/2c11c1eb-d6c0-4588-a509-e9a67c04a18d1687501313805TommyHilfigerMenGunmetal-TonedDialBrownLeatherStrapsChronogr3.jpg">
+            </div>
+            <div class="product-details-gallery">
+
+            </div>
+        </div>
+        <div class="product-details-info">
+            <div class="product-details-title">
+				<h3>Tommy Hilfiger</h3>
+				<span class="product-details-short-desc">Men Gunmetal-Toned Dial & Brown Leather Straps Chronograph Watch TH1791799W</span>
+				<div class="product-details-rating">
+					<span class="rating-average">4.5 <i class="fa-solid fa fa-star" style="color: #03a685;"></i></span> <span class="seperator">|</span><span class="rating-count">91 Ratings</span>
+				</div>
+			</div>
+			
+			<div class="product-details-price">
+				<span class="details-sell-price bold-600">&#8377;4560</span>
+				<span class="details-mrp-price">&#8377;6480</span>
+				<span class="details-discount bold-600">(50% OFF)</span>
+			</div>
+			<span class="details-tax-info bold-600">inclusive of all taxes</span>
+			<div class="product-variations-section">
+				<div class="each-variation">
+					<span class="variation-title bold-600">More colors</span>
+					<div class="variation-items">
+						<button style="background-color: red;"></button>
+						<button style="background-color: black;"></button>
+						<button style="background-color: gray;"></button>
+						<button style="background-color: blueviolet;"></button>
+					</div>
+				</div>
+			</div>
+			<div class="product-variations">
+				<div class="each-variation">
+					<span class="variation-title bold-600">Select sizes</span>
+					<div class="variation-items">
+						<button class="bg-white bold-600">S</button>
+						<button class="bg-white bold-600">M</button>
+						<button class="bg-white bold-600">L</button>
+						<button class="bg-white bold-600">XL</button>
+						<button class="bg-white bold-600">XXL</button>
+					</div>
+				</div>
+				<div class="add-to-cart-button-section">
+					<div class="details-add-to-cart">
+						<button> <i class="fa fa-sharp fa fa-light fa fa-cart-plus" style="margin-right: 5px;"></i> Add to cart</button>
+					</div>
+					<div class="details-wish-list">
+						<button><i class="fa fa-heart" style="color: red;"></i> Wishlist</button>
+					</div>
+				</div>
+			</div>
+			<div class="seller-info">
+				<div class="seller-details-price">
+					<span class="seller-sell-price bold-600">&#8377;4560</span>
+					<span class="seller-mrp-price mrp-price">&#8377;6480</span>
+					<span class="seller-discount bold-600">(50% OFF)</span>
+				</div>
+				<div class="shipping-info">
+					<span>Get it by Sun, Oct 29 - 700015</span>
+				</div>
+				<div class="seller-name">
+					<span class="seller-title">Seller: </span><span class="seller bold-600">Flashtech Retail</span>
+				</div>
+			</div>
+			<div class="delivery-option-section">
+				<span class="variation-title bold-600">DELIVERY OPTIONS</span>
+				<span class="sprite-image-car"></span>
+				<div class="pincode-box">
+					<span class="selected-pincode bold-600">700015 <i class="fa-solid fa fa-check" style="color: #03a685;"></i></span><span class="change-text bold-600">change</span>
+				</div>
+				<div class="delivery-date">
+					<span class="icon"><i class="fa fa-thin fa fa-truck"></i></span><span class="info bold-600">Get it by Sun, Oct 29</span>
+				</div>
+				<div class="cod-option">
+					<span class="icon"><i class="fa fa-light fa fa-wallet"></i></span><span class="info bold-600">Pay on delivery available</span>
+				</div>
+				<div class="return-option">
+					<span class="icon"><i class="fa fa-thin fa fa-right-left"></i></span><span class="info bold-600">Easy 14 days return & exchange available</span>
+				</div>
+			</div>
+			<div class="original-tag">
+				<span>100% Original Products</span>
+			</div>
+			<div class="product-details-section">
+				<span class="variation-title bold-600">PRODUCT DETAILS</span><span class="sprite-image-product-details"></span>
+				<div class="product-details">
+					<p>Pack Contains: single watch</p>
+					<p>Display: analogue</p>
+					<p>Movement: quartz</p>
+					<p>Power Source: battery</p>
+					<p>Dial style: gunmetal-toned solid round stainless steel dial</p>
+					<p>Features: chronograph, reset time</p>
+					<p>Strap Style: brown, regular, leather strap with a tang closure</p>
+					<p>Water resistance: 50 m</p>
+					<p>Comes in a signature Tommy Hilfiger case</p>
+					<p>Warranty: 2 years</p>
+					<p>Warranty provided by brand owner/manufacturer</p>
+				</div>
+				<div class="product-specification">
+					<span class="bold-600 speci-title">Specifications</span>
+					<div class="specification-data">
+						<div class="each-specification">
+							<span class="spe-key">Display</span>
+							<span class="spe-data">Analogue</span>
+						</div>
+						<div class="each-specification">
+							<span class="spe-key">Features</span>
+							<span class="spe-data">Chronograph</span>
+						</div>
+						<div class="each-specification">
+							<span class="spe-key">Movement</span>
+							<span class="spe-data">Quartz</span>
+						</div>
+						<div class="each-specification">
+							<span class="spe-key">Power Source</span>
+							<span class="spe-data">Battery</span>
+						</div>
+						<div class="each-specification">
+							<span class="spe-key">Type</span>
+							<span class="spe-data">Regular</span>
+						</div>
+						<div class="each-specification">
+							<span class="spe-key">Dial Shape</span>
+							<span class="spe-data">Round</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<span class="variation-title bold-600">RATINGS</span><span class="sprite-image-ratings"></span>
+			<div class="rating-section">
+				<div class="total-rating-box rating-item">
+					<div class="rating-number">
+						<span class="rate-num">4.5</span><span class="rate-star"></span>
+					</div>
+					<div class="total-buyers">91 Verified Buyers</div>
+				</div>
+				<div class="rating-separator rating-item"></div>
+				<div class="rating-chart-box rating-item">
+					<div class="each-progress">
+						<span class="star-num">5</span>
+						<span class="star-img"></span>
+						<progress min="0" max="91" value="68" data-rating="5"></progress>
+						<span class="rating-count">68</span>
+					</div>
+					<div class="each-progress">
+						<span class="star-num">4</span>
+						<span class="star-img"></span>
+						<progress min="0" max="91" value="10" data-rating="4"></progress>
+						<span class="rating-count">10</span>
+					</div>
+					<div class="each-progress">
+						<span class="star-num">3</span>
+						<span class="star-img"></span>
+						<progress min="0" max="91" value="8" data-rating="3"></progress>
+						<span class="rating-count">8</span>
+					</div>
+					<div class="each-progress">
+						<span class="star-num">2</span>
+						<span class="star-img"></span>
+						<progress min="0" max="91" value="10" data-rating="2"></progress>
+						<span class="rating-count">10</span>
+					</div>
+					<div class="each-progress">
+						<span class="star-num">1</span>
+						<span class="star-img"></span>
+						<progress min="0" max="91" value="5" data-rating="1"></progress>
+						<span class="rating-count">5</span>
+					</div>
+				</div>
+			</div>
+			<div class="user-rating-section">
+				<div class="each-user-rating">
+					<div class="review-image-wrapper">
+						<div class="user-comment"><span class="each-5-star"></span><span class="each-user-comment">Looks so nice</span></div>
+						<img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2023/5/12/a8828564-e499-45bd-9475-24adae5db9a91683897739701-image786.jpg" alt="">
+						<img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2022/9/24/e19314e8-14d6-4c8f-af2c-cbff594649a21664007733454-IMG-20220924-WA0004.jpg" alt="">
+						<div class="user-details-review"><span class="user-rating-name">James</span><span class="each-user-separator"></span><span>15 Oct 2023</span></div>
+					</div>	
+				</div>
+				<div class="each-user-rating">
+					<div class="review-image-wrapper">
+						<div class="user-comment"><span class="each-5-star"></span><span class="each-user-comment">Very Stylish</span></div>
+						<div class="user-details-review"><span class="user-rating-name">James</span><span class="each-user-separator"></span><span>24 Sept 2022</span></div>
+					</div>	
+				</div>
+				<div class="each-user-rating">
+					<div class="review-image-wrapper">
+						<div class="user-comment"><span class="each-5-star"></span><span class="each-user-comment">Wonderfull in a low budget</span></div>
+						<img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2023/5/12/a8828564-e499-45bd-9475-24adae5db9a91683897739701-image786.jpg" alt="">
+						<img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2022/9/24/e19314e8-14d6-4c8f-af2c-cbff594649a21664007733454-IMG-20220924-WA0004.jpg" alt="">
+						<div class="user-details-review"><span class="user-rating-name">James</span><span class="each-user-separator"></span><span>05 Jan 2022</span></div>
+					</div>	
+				</div>
+			</div>
+        </div>
+        <div class="clearfix"></div>
+	</div>
+	<div class="container">
+		<h2 class="main-heading">Similar Products</h2>
+		<div class="similar-product-wrapper wrapper">
+			<div class="column">
+				<h3>Product 1</h3>
+				<i class="wish-heart fa fa-sharp fa fa-light fa fa-heart  fa fa-lg"></i>
+				<i class="view-eye fa fa-eye fa fa-light fa fa-eye  fa fa-lg"></i>
+				<img src="assets/img/product.jpg" class="product-image">
+				<div class="add-to-cart">
+					<button class="similar-buy-now button-hover">BUY NOW</button><button class="similar-add-cart button-hover">ADD TO CART</button>
+				</div>
+			</div>
+			<div class="column">
+				<h3>Product 2</h3>
+				<i class="wish-heart fa fa-sharp fa fa-light fa fa-heart  fa fa-lg"></i>
+				<i class="view-eye fa fa-eye fa fa-light fa fa-eye  fa fa-lg"></i>
+				<img src="assets/img/product2.jpg" class="product-image">
+				<div class="add-to-cart">
+					<button class="similar-buy-now button-hover">BUY NOW</button><button class="similar-add-cart button-hover">ADD TO CART</button>
+				</div>
+			</div>
+			<div class="column">
+				<h3>Product 3</h3>
+				<i class="wish-heart fa fa-sharp fa fa-light fa fa-heart  fa fa-lg"></i>
+				<i class="view-eye fa fa-eye fa fa-light fa fa-eye  fa fa-lg"></i>
+				<img src="assets/img/product3.jpg" class="product-image">
+				<div class="add-to-cart">
+					<button class="similar-buy-now button-hover">BUY NOW</button><button class="similar-add-cart button-hover">ADD TO CART</button>
+				</div>
+			</div>
+			<div class="column">
+				<h3>Product 4</h3>
+				<i class="wish-heart fa fa-sharp fa fa-light fa fa-heart  fa fa-lg"></i>
+				<i class="view-eye fa fa-eye fa fa-light fa fa-eye  fa fa-lg"></i>
+				<img src="assets/img/product4.jpg" class="product-image">
+				<div class="add-to-cart">
+					<button class="similar-buy-now button-hover">BUY NOW</button><button class="similar-add-cart button-hover">ADD TO CART</button>
+				</div>
+			</div>
+			<div class="column">
+				<h3>Product 5</h3>
+				<i class="wish-heart fa fa-sharp fa fa-light fa fa-heart  fa fa-lg"></i>
+				<i class="view-eye fa fa-eye fa fa-light fa fa-eye  fa fa-lg"></i>
+				<img src="assets/img/product5.jpg" class="product-image">
+				<div class="add-to-cart">
+					<button class="similar-buy-now button-hover">BUY NOW</button><button class="similar-add-cart button-hover">ADD TO CART</button>
+				</div>
+			</div>
+			<div class="column">
+				<h3>Product 6</h3>
+				<i class="wish-heart fa fa-sharp fa fa-light fa fa-heart  fa fa-lg"></i>
+				<i class="view-eye fa fa-eye fa fa-light fa fa-eye  fa fa-lg"></i>
+				<img src="assets/img/product6.jpg" class="product-image">
+				<div class="add-to-cart">
+					<button class="similar-buy-now button-hover">BUY NOW</button><button class="similar-add-cart button-hover">ADD TO CART</button>
+				</div>
+			</div>
+			<div class="column">
+				<h3>Product 7</h3>
+				<i class="wish-heart fa fa-sharp fa fa-light fa fa-heart  fa fa-lg"></i>
+				<i class="view-eye fa fa-eye fa fa-light fa fa-eye  fa fa-lg"></i>
+				<img src="assets/img/product7.jpg" class="product-image">
+				<div class="add-to-cart">
+					<button class="similar-buy-now button-hover">BUY NOW</button><button class="similar-add-cart button-hover">ADD TO CART</button>
+				</div>
+			</div>
+			<div class="column">
+				<h3>Product 8</h3>
+				<i class="wish-heart fa fa-sharp fa fa-light fa fa-heart  fa fa-lg"></i>
+				<i class="view-eye fa fa-eye fa fa-light fa fa-eye  fa fa-lg"></i>
+				<img src="assets/img/product8.jpg" class="product-image">
+				<div class="add-to-cart">
+					<button class="similar-buy-now button-hover">BUY NOW</button><button class="similar-add-cart button-hover">ADD TO CART</button>
+				</div>
+			</div>
+			<div class="column">
+				<h3>Product 9</h3>
+				<i class="wish-heart fa fa-sharp fa fa-light fa fa-heart  fa fa-lg"></i>
+				<i class="view-eye fa fa-eye fa fa-light fa fa-eye  fa fa-lg"></i>
+				<img src="assets/img/product9.jpg" class="product-image">
+				<div class="add-to-cart">
+					<button class="similar-buy-now button-hover">BUY NOW</button><button class="similar-add-cart button-hover">ADD TO CART</button>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="footer">
+		<div class="footer-logo footer-div">
+			<img src="assets/img/footer-logo.png">
+		</div>
+		<div class="useful-links footer-div">
+			<h3>Useful Links</h3>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">Privacy</a></li>
+			</ul>
+		</div>
+		<div class="useful-links footer-div">
+			<h3>Useful Links</h3>
+			<ul>
+				<li><a href="#">Dashboard</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">Privacy</a></li>
+			</ul>
+		</div>
+		<div class="news-letter footer-div">
+			<h3>Newsletter</h3>
+			<div class="news-letter-form">
+				<input type="email" placeholder="Enter your email">
+				<button class="subscribe button-hover"><i class="fa fa-solid fa fa-paper-plane fa fa-lg"></i></button>
+			</div>
+			<div class="social-icons">
+				<a href="#"><i class="fa fa-brands fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-brands fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-brands fa fa-youtube"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>ALL RIGHTS RESERVED 2023 COPYRIGHTS. MADE WITH <i class="fa fa-sharp fa fa-light fa fa-heart fa fa-fade fa fa-lg text-red"></i> </p>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/owl.carousel.min.js"></script>
+	<script src="assets/js/main.js" type="text/javascript"></script>
+</body>
+</html>
